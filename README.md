@@ -1,6 +1,6 @@
 # LangChain + SQL
 
-This is a LangChain + Streamlit web application for searching relevant offers from a SQLite database using OpenAI language model (LLM) and embeddings. Users can input a search query related to brand, category, or retailer, and the application will retrieve and display relevant offers from the database. The application uses OpenAI API for natural language processing and embedding generation.
+This is a LangChain + Streamlit web application for searching relevant offers from a SQLite database using an LLM and embeddings. Users can input a search query related to brand, category, or retailer, and the application will retrieve and display relevant offers from the database. The application uses the OpenAI API for natural language processing and embedding generation.
 
 ### Background
 
@@ -39,8 +39,8 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/sridhama/llm-sql
+   cd llm-sql
    ```
 
 2. Install the required packages:
@@ -55,7 +55,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Usage
 
-To run the application, use the following command:
+To run the application locally, use the following command:
 
 ```bash
 cd <repository-directory>
@@ -63,6 +63,11 @@ cd <repository-directory>
 ```
 
 Once the application is running, open your browser and navigate to `http://localhost:8501` to access the offer search interface.
+
+
+### Run online
+
+You can access the application through [Google Colab](https://colab.research.google.com/drive/1aEmzQAjk5Hg2C4m4zinoIGyv9C3_wZzu?usp=sharing). Just create a copy of the notebook and follow the instructions within.
 
 ### How to Use
 
