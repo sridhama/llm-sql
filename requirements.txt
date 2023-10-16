@@ -1,8 +1,7 @@
-streamlit
-pandas
-numpy
-openai
-langchain
-langchain-experimental
-sqlite3
-tiktoken
+streamlit==1.27.2
+pandas==1.5.3
+numpy==1.23.5
+openai==0.28.1
+langchain==0.0.315
+langchain-experimental==0.0.30
+tiktoken==0.5.1
