@@ -26,6 +26,10 @@ This is a LangChain + Streamlit web application for searching relevant offers fr
 
 - **Advanced Prompting:** While this approach achieves the desired functionality, more sophisticated prompts can be constructed through techniques like in-context learning or few-shot inference. Exploring these avenues may lead to even more accurate and versatile results.
 
+### Run online
+
+You can access the application through [Google Colab](https://colab.research.google.com/drive/1aEmzQAjk5Hg2C4m4zinoIGyv9C3_wZzu?usp=sharing). Just create a copy of the notebook and follow the instructions within.
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -36,43 +40,44 @@ Before you begin, ensure you have met the following requirements:
 
 ### Setup
 
-1. Clone the repository:
+1. Create and activate a Python virtual environment:
+
+   ```bash
+   python -m venv llm_sql_env
+   source llm_sql_env/bin/activate
+   ```
+
+2. Clone the repository:
 
    ```bash
    git clone https://github.com/sridhama/llm-sql
    cd llm-sql
    ```
 
-2. Install the required packages:
+3. Install the required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Obtain an OpenAI API key from [OpenAI Platform](https://platform.openai.com/account/api-keys) and add it to the application when prompted.
+4. Obtain an OpenAI API key from [OpenAI Platform](https://platform.openai.com/account/api-keys) and add it to the application when prompted.
 
-4. Make sure your SQLite database is set up with the necessary tables (`brand_category`, `categories`, `offer_retailer`).
+5. Make sure your SQLite database is set up with the necessary tables (`brand_category`, `categories`, `offer_retailer`).
 
 ### Usage
 
-To run the application locally, use the following command:
+To run the application locally, navigate to the repository's directory and use the following command:
 
 ```bash
-cd <repository-directory>
-./run/run.sh
+./run.sh
 ```
 
 Once the application is running, open your browser and navigate to `http://localhost:8501` to access the offer search interface.
 
-
-### Run online
-
-You can access the application through [Google Colab](https://colab.research.google.com/drive/1aEmzQAjk5Hg2C4m4zinoIGyv9C3_wZzu?usp=sharing). Just create a copy of the notebook and follow the instructions within.
-
 ### How to Use
 
 1. Enter your search query (brand, category, or retailer) in the text input field.
-2. Click the "Submit" button to initiate the search.
+2. Click the "Search" button to initiate the search.
 3. Relevant offers matching the query will be displayed in a table format.
 
 ### Notes
@@ -91,4 +96,3 @@ You can access the application through [Google Colab](https://colab.research.goo
 ![plot](./img/3.png)
 
 ![plot](./img/4.png)
-
